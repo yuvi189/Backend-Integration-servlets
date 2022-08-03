@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+
+<style>
+    #login
+    {
+        width: 20%;
+        border:1px solid black;
+        margin: auto;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .login-button
+    {
+        margin-top: 10px
+  
+    }
+</style>
+        
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <form id="login" action="LoginServlet" method="post">
+                <h1 id="heading">Login Page</h1>
+                <table>
+                    <tr>
+                        <td>Email ID &nbsp; &nbsp;</td>
+                        <td><input type="text" name="user_email" placeholder="email address"/> </td>
+                    </tr>
+                    <tr>
+                        <td>Password &nbsp; &nbsp;</td>
+                        <td><input type="password" name="user_password" placeholder="password"/> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="login-button" type="submit">LOGIN</button> 
+                            <button type="reset">CLEAR</button>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="Change.html">Change Password</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.registration.portal.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangeServlet</servlet-name>
+        <servlet-class>com.change.password.ChangeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Testing</servlet-name>
+        <servlet-class>com.change.password.Testing</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeServlet</servlet-name>
+        <url-pattern>/ChangeServlet</url-pattern>
+    </servlet-mapping>
+    <!--mappping-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.LoginPortal.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>SuccessServlet</servlet-name>
+        <servlet-class>com.registration.portal.SuccessServlet</servlet-class>
+    </servlet>
+    <!--mappping-->
+    <servlet-mapping>
+        <servlet-name>SuccessServlet</servlet-name>
+        <url-pattern>/SuccessServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Testing</servlet-name>
+        <url-pattern>/Testing</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

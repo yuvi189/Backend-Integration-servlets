@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<style>
+    #login
+    {
+        width: 20%;
+        border:1px solid black;
+        margin: auto;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .login-button
+    {
+        margin-top: 10px
+  
+    }
+    #t1
+    {
+    }
+    #t2
+    {
+    }
+</style>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="login" action="ChangeServlet" method="post">
+                <h1 id="heading">Password Reset Page</h1>
+                <table>
+                     <tr>
+                        <td><input type="text" name="user_email" placeholder="Email Address"/> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="user_password_old" placeholder="Old Password"/> </td>
+                    </tr>
+                    <tr>
+                        <td id="t1"><input class="t1" type="password" name="user_password_new" placeholder="Enter New Password"/> </td>
+                    </tr>
+                    <tr>
+                        <td id="t2"><input  type="password" name="user_password_new_confirm" placeholder="Confirm New password"/> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button  class="login-button" type="submit">RESET PASSWORD</button> 
+                            <button  type="reset">CLEAR</button>
+                        </td>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Page</title>
+        <style>
+            .headinggg
+            {
+                text-align: center;
+                
+            }
+            
+            .container
+            {
+                background-color: lightskyblue;
+                width: 30%;
+                border:1px solid black;
+                margin: auto;
+                padding: 20px;
+                font-size: 20px;
+            }
+            
+            #MyForm table tr td input 
+            {
+                font-size: 15px;
+            }
+            h3
+            {
+                font-family: Arial;
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+  
+    </head>
+    <body>
+        
+        <div class="container"> 
+            <h1 class="headinggg">Registration Form</h1>
+            <form id="MyForm" action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>Enter Your Name &nbsp; &nbsp; </td>
+                        <td><input type="text" name="user_name" placeholder="Full Name"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enter Your email ID &nbsp; &nbsp; </td>
+                        <td><input type="text" name="user_email" placeholder="Email ID"/> </td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>Enter Password &nbsp; &nbsp; </td>
+                        <td><input type="password" name="user_password" placeholder="Password"/> </td>
+                    </tr>
+                    
+                    
+                    <!--space-->
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <!--space-->
+                    
+                    
+                    <tr>
+                        <td>Select Your Branch</td>
+                        <td><input type="radio" name="user_branch" value="mechanical engineering">ME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="user_branch" value="electrical engineering">EE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="user_branch" value="civil engineering">CE</td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                        <td><input type="radio" name="user_branch" value="Electronics and communication engineering">ECE &nbsp; <input type="radio" name="user_branch" value="electronics and computer engineering">ENC &nbsp; <input type="radio" name="user_branch" value="computer engineering">COE </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                        <td><input type="radio" name="user_branch" value="Computer Science Engineering">CSE</td>
+                    </tr>
+                    
+                    
+                    <!--space-->
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <!--space-->
+                    
+                    
+                    <tr>
+                        <td>Choose a Course</td>
+                        <td>
+                            <select name="user_course">
+                                <option value="DSA With Java">DSA With Java</option>
+                                <option value="DSA With C++">DSA With C++</option>
+                                <option value="Fronted Development Using JavaScript">Fronted Development Using JavaScript</option>
+                                <option value="Machine Learning Using Python">Machine Learning Using Python</option>
+                            </select>
+                            
+                        </td>
+                        
+                    </tr>
+                    
+                    <!--space-->
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <tr>
+                        <td>                  </td>
+                    </tr>
+                    <!--space-->
+                    
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">SUBMIT</button>
+                            <button type="reset">CLEAR</button>
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+                <h3>
+                    Already Registered?
+                    <a href="Login.html">Login here</a>
+                </h3>
+                
+            </form>
+        </div>
+    </body>
+</html>
+ 
